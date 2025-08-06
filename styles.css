@@ -1,0 +1,133 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+:root {
+    --content-color: #e2e8f0;
+    --side-bar: #1a1a21;
+    --content-font-color: #414551; 
+    --sidebar-font-color: #828490; 
+    --card-color: white;
+    --divider-color: #40404a;
+    --dashboard-color: white;
+}
+
+.container {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: var(--content-color);
+    gap: 20px;
+}
+
+
+.dashboard {
+    background-color: #006157;
+}
+
+.sidebar {
+    background-color: var(--side-bar);
+    color: var(--sidebar-font-color);
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    align-items: self-start;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    filter: invert(100%);
+    width: 40px;
+    padding-right: 4px;
+} 
+
+.divider {
+    height: 1px;
+    width: 185px;
+    background-color: var(--divider-color);
+}
+
+.page {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.page img {
+    filter: invert(50%);
+    width: 20px;
+    padding-right: 10px;
+}       
+
+.dashboard {
+    background-color: var(--dashboard-color);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.dashboard img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.top-bar {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search .bar {
+    width: 35vw;
+    height: 40px;
+    background-color: #e2e8f0;
+    border-radius: 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user .profile-picture {
+    width: 80px;
+}
+
+.user-name {
+    font-size: 2rem;
+    color: var(--content-font-color);
+    font-weight: bold;
+}
+
+.content {
+    background-color: var(--content-color);
+    grid-column: 2 / 3;
+}
+
+.footer {
+    background-color: #393f4d;
+}
