@@ -29,6 +29,8 @@ html {
 
 .dashboard {
     background-color: #006157;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
@@ -81,6 +83,7 @@ html {
     align-items: center;
     padding: 20px;
     margin-top: 20px;
+    margin-right: 25px;
     border-radius: 20px;
 }
 
@@ -89,9 +92,8 @@ html {
     padding-right: 10px;
 }
 
-.top-bar {
+.bar {
     display: flex;
-    padding: 20px;
     width: 100%;
     justify-content: space-between;
 }
@@ -99,28 +101,63 @@ html {
 .search {
     display: flex;
     align-items: center;
+    margin-left: 40px;
 }
 
 .search .bar {
     width: 35vw;
-    height: 40px;
+    height: 30px;
     background-color: #e2e8f0;
     border-radius: 30px;
 }
 
 .user {
+    margin-right: 40px;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .user .profile-picture {
     width: 80px;
 }
 
+#bottom-pfp {
+    width: 120px;
+}
+
 .user-name {
     font-size: 2rem;
     color: var(--content-font-color);
     font-weight: bold;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#hi {
+    font-size: 1.5rem;
+}
+
+#user {
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.right-side a {
+    color: var(--content-font-color);
+    text-decoration: none;
 }
 
 .content {
