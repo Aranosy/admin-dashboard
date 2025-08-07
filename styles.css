@@ -12,6 +12,7 @@ html {
     --card-color: white;
     --divider-color: #40404a;
     --dashboard-color: white;
+    --vertical-divider: #dbdde7;
 }
 
 .container {
@@ -21,9 +22,14 @@ html {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 11fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
     background-color: var(--content-color);
     gap: 20px;
+}
+
+
+a {
+    text-decoration: none;
 }
 
 
@@ -31,6 +37,10 @@ html {
     background-color: #006157;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar a:visited {
+    color: var(--sidebar-font-color)
 }
 
 .sidebar {
@@ -80,11 +90,30 @@ html {
 .dashboard {
     background-color: var(--dashboard-color);
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 20px;
     margin-top: 20px;
     margin-right: 25px;
     border-radius: 20px;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;  
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+
+}
+
+.links a {
+    color: var(--sidebar-font-color);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .dashboard img {
@@ -94,8 +123,6 @@ html {
 
 .bar {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
 
 .search {
@@ -118,6 +145,12 @@ html {
     gap: 10px;
 }
 
+.user .vertical-divider {
+    width: 1px;
+    height: 50px;
+    background-color: var(--vertical-divider);
+}
+
 .user .profile-picture {
     width: 80px;
 }
@@ -127,9 +160,8 @@ html {
 }
 
 .user-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--content-font-color);
-    font-weight: bold;
 }
 
 .left-side {
