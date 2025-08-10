@@ -262,6 +262,7 @@ a {
     display: flex;
     align-self: flex-end;   
     margin: 20px;
+    gap: 5px;
 }
 
 .project img {
@@ -292,3 +293,47 @@ a {
     font-size: 0.9rem;
 }
 
+.trending .project{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px
+}
+
+.user-data {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    align-items: center;
+}
+
+.user-pfp {
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 100%;
+}
+
+.trending .description {
+    color: var(--sidebar-font-color)
+}
+
+
+.footer {
+    display: flex;
+    margin-top: auto;
+    font-size: 15px;
+    align-items: baseline;
+}
+
+.github-logo {
+    margin-right: 10px;
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 5px;
+}
+
+.github-logo:hover {
+    transform: rotate(360deg) scale(1.2);
+}
